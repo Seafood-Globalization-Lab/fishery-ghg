@@ -1,4 +1,5 @@
-# Author: Kelvin Gorospe
+# Author: Kiran Fontana and Jessica Gephart
+# Developed from FishPrint, originally authored by Kelvin Gorospe
 # Calculate greenhouse gas footprint for wild caught fisheries
 
 rm(list = ls())
@@ -10,8 +11,8 @@ library(brms)
 library(tidybayes)
 
 # Mac
-datadir <- "/Volumes/jgephart/BFA Environment 2/Data"
-outdir <- "/Volumes/jgephart/BFA Environment 2/Outputs"
+datadir <- "data"
+outdir <- "outputs"
 
 # GHG data
 wild_dat <- read.csv(file.path(datadir, "fisheries_fuel_use.csv")) %>% as_tibble()
